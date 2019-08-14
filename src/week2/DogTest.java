@@ -1,3 +1,5 @@
+package week2;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,6 +12,6 @@ class DogTest {
         assertNull(dog.name);
         assertEquals(0, dog.age);
         assertNull(dog.breed);
-        assertNull(dog.shotStaus);
+        assertNull(dog.shotStatus);
     }
 }
