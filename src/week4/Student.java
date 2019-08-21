@@ -5,7 +5,13 @@ public class Student {
     private float creditHours;
     private float pointsEarned;
 
-    public float gpa(float creditHours, float pointsEarned) {
+    public Student() {
+        idNumber = 9999;
+        creditHours = 3;
+        pointsEarned = 12;
+    }
+
+    public float gpa(float pointsEarned, float creditHours) {
         return pointsEarned / creditHours;
     }
 

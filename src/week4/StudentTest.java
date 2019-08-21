@@ -9,9 +9,9 @@ class StudentTest {
 
     @Test
     void gpa() {
-        studentOne.setCreditHours(50);
-        studentOne.setPointsEarned(1000);
-        assertEquals((float) 1000 / 50, studentOne.gpa(studentOne.getCreditHours(), studentOne.getPointsEarned()));
+        studentOne.setCreditHours(3);
+        studentOne.setPointsEarned(12);
+        assertEquals((float) 12 / 3, studentOne.gpa(studentOne.getPointsEarned(), studentOne.getCreditHours()));
     }
 
     @Test
@@ -30,6 +30,14 @@ class StudentTest {
     void getPointsEarned() {
         studentOne.setPointsEarned(100);
         assertEquals(100, studentOne.getPointsEarned());
+    }
+
+    @Test
+    void initialiser() {
+        Student defaultStudent = new Student();
+        assertEquals(9999, defaultStudent.getIdNumber());
+        assertEquals(12, defaultStudent.getPointsEarned());
+        assertEquals(3, defaultStudent.getCreditHours());
     }
 
 }
