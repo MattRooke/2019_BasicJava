@@ -7,9 +7,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class BillingTest {
 
     @Test
-    void computeBill() {
-        Billing bill = new Billing(30.00);
+    void computeBill1() {
+        Billing bill = new Billing();
         bill.computeBill(30.00);
-        assertEquals(32.4, bill.price);
+        assertEquals(32.4, bill.cost);
+    }
+
+    @Test
+    void computeBill2() {
+        Billing bill = new Billing();
+        bill.computeBill(30.00, 5);
+        assertEquals(162.00, bill.cost);
+    }
+
+    @Test
+    void computeBill3() {
+        Billing bill = new Billing();
+        bill.computeBill(30.00, 5, 10.00);
+        assertEquals(151.20, bill.cost);
     }
 }
