@@ -6,8 +6,12 @@ import java.util.Scanner;
 public class Game {
     int count;
     int wins;
-    private Random random = new Random();
-    int secret = random.nextInt(10) + 1; // Assigns a random number from 1-10 inclusive.
+    int secret;
+
+    public Game(int min, int max) {
+        Random random = new Random();
+        secret = min + random.nextInt(max - min);
+    }
 
     void makeGuess(int value) {
         count += 1;
@@ -17,7 +21,7 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        Game guessingGame = new Game();
+        Game guessingGame = new Game(1, 10);
         guessingGame.makeGuess(guessingGame.userInput());
         if (guessingGame.wins == 1) {
             System.out.println("You won!");
