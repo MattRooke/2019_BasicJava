@@ -5,13 +5,9 @@ import java.util.Scanner;
 public class EvenOdd {
     int number;
 
-    public EvenOdd() {
-        number = getUserInput();
-    }
-
     public static void main(String[] args) {
         EvenOdd evenOdd = new EvenOdd();
-        evenOdd.findEvenOdd(evenOdd.number);
+        evenOdd.findEvenOdd(evenOdd.getUserInput());
     }
 
     public int getUserInput() {
