@@ -1,10 +1,10 @@
 package week5.DebuggingExercises;
-// DebugFive4.java
+// DebugFive4_Fixed.java
 // Outputs highest of four numbers
 
 import javax.swing.*;
 
-public class DebugFive4 {
+public class DebugFive4_Fixed {
     public static void main(String[] args) {
         int one, two, three, four;
         String str, output;

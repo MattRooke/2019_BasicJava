@@ -1,5 +1,5 @@
 package week5.DebuggingExercises;
-// DebugFive3.java
+// DebugFive3_Fixed.java
 // Determines whether item number on order is valid
 // Over 999 invalid
 // Less than 111 Invalid
@@ -8,7 +8,7 @@ package week5.DebuggingExercises;
 
 import java.util.Scanner;
 
-public class DebugFive3 {
+public class DebugFive3_Fixed {
     public static void main(String[] args) {
         int item;
         String output;

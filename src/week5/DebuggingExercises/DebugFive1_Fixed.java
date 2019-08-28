@@ -1,5 +1,5 @@
 package week5.DebuggingExercises;
-// DebugFive1
+// DebugFive1_Fixed
 // Adds your lunch bill
 // Burger and hot dog are $2.59
 // Grilled cheese and fish are $1.99
@@ -7,7 +7,7 @@ package week5.DebuggingExercises;
 
 import javax.swing.*;
 
-public class DebugFive1 {
+public class DebugFive1_Fixed {
     public static void main(String[] args) throws Exception {
         final double HIGH_PRICE = 2.59;
         final double MED_PRICE = 1.99;

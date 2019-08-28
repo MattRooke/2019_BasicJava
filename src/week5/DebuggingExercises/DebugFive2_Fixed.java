@@ -1,10 +1,10 @@
 package week5.DebuggingExercises;
-// DebugFive2.java
+// DebugFive2_Fixed.java
 // Decides if two numbers are evenly divisible
 
 import java.util.Scanner;
 
-public class DebugFive2 {
+public class DebugFive2_Fixed {
     public static void main(String[] args) {
         int firstNum;
         int secondNum;
