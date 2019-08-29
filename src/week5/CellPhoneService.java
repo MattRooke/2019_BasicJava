@@ -11,7 +11,6 @@ import javax.swing.*;
 public class CellPhoneService {
     public static void main(String[] args) {
         int talk, text, data;
-        String input;
         talk = getUserInfo("Enter your maximum monthly talk minutes.");
         text = getUserInfo("Enter your maximum monthly text messages sent.");
         data = getUserInfo("Enter your maximum monthly gigabytes of data used.");
@@ -41,10 +40,10 @@ public class CellPhoneService {
 
     private static int getUserInfo(String message) {
         String input;
-        int param;
+        int answer;
         input = JOptionPane.showInputDialog(null, message);
-        param = Integer.parseInt(input);
-        return param;
+        answer = Integer.parseInt(input);
+        return answer;
     }
 
 }
