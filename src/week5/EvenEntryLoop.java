@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class EvenEntryLoop {
     public static void main(String[] args) {
         Scanner getUserInput = new Scanner(System.in);
-        System.out.println("Enter an even number please...");
+        System.out.println("Enter an even number to continue or 999 to quit.");
         int userInput = getUserInput.nextInt();
         while (userInput != 999) {
             if (userInput % 2 == 0) {
