@@ -1,7 +1,7 @@
 package week5;
 
 //A simple program that counts in multiples of 3, from 3 to 300 inclusive.
-//New line ever multiple of 30.
+//New line every multiple of 30.
 public class CountByThrees {
     public static final int START = 3;
     public static final int END = 300;
