@@ -2,7 +2,7 @@ package week8;
 
 public abstract class Book {
     float price;
-    private String title;
+    String title;
 
     public Book(String title) {
         this.title = title;
