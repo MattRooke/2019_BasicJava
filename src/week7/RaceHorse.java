@@ -7,4 +7,8 @@ public class RaceHorse extends Horse {
         super(name, colour, year);
         this.races = races;
     }
+
+    public int getRaces() {
+        return races;
+    }
 }
