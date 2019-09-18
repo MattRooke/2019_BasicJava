@@ -15,6 +15,6 @@ public class IncomingPhoneCall extends PhoneCall {
     public String toString() {
         return "Phone Number: " + phoneNumber +
                 "\nRate: $" + cost +
-                "\nCost for this call: $" + cost;
+                "\nCost for this call: $" + cost + "\n";
     }
 }

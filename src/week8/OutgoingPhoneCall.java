@@ -21,6 +21,6 @@ public class OutgoingPhoneCall extends PhoneCall {
         return "Phone Number: " + phoneNumber +
                 "\nRate: $" + cost + " per min" +
                 "\nNumber of minutes: " + time +
-                "\nCost for this call: $" + totalCost;
+                "\nCost for this call: $" + totalCost + "\n";
     }
 }
