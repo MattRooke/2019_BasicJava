@@ -10,9 +10,9 @@ public class DomesticDivision extends Division {
 
     @Override
     public String toString() {
-        return "Division" +
-                "\n Name: " + name +
-                "\n Account Number: " + accountNumber +
-                "\n State: " + state + "\n";
+        return " Division" +
+                "\n  Name: " + name +
+                "\n  Account Number: " + accountNumber +
+                "\n  State: " + state + "\n";
     }
 }

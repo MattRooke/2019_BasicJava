@@ -12,10 +12,10 @@ public class InternationalDivision extends Division {
 
     @Override
     public String toString() {
-        return "Division" +
-                "\n Name: " + name +
-                "\n Account Number: " + accountNumber +
-                "\n Country: " + country +
-                "\n Language: " + language + "\n";
+        return " Division" +
+                "\n  Name: " + name +
+                "\n  Account Number: " + accountNumber +
+                "\n  Country: " + country +
+                "\n  Language: " + language + "\n";
     }
 }

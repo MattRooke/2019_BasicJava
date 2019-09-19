@@ -17,7 +17,7 @@ public class UseDivision {
                 new InternationalDivision("Munich", "80636", "Germany", "German"),
                 new InternationalDivision("Zurich", "80024", "Switzerland", "French")};
 
-        System.out.println("GOOGLE");
+        System.out.println("Google");
         for (Division division : Google
         ) {
             System.out.println(division);
