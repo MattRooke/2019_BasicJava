@@ -8,6 +8,7 @@ public abstract class NewspaperSubscription {
     public NewspaperSubscription(String name, String address) {
         this.name = name;
         this.address = address;
+        setAddress();
     }
 
     public String getName() {

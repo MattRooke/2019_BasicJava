@@ -4,7 +4,6 @@ public class PhysicalNewspaperSubscription extends NewspaperSubscription {
 
     public PhysicalNewspaperSubscription(String name, String address) {
         super(name, address);
-        setAddress();
     }
 
     @Override
