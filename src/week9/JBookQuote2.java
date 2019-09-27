@@ -34,6 +34,7 @@ public class JBookQuote2 implements ActionListener {
         quoteWindow.setSize(1280, 300);
         quoteWindow.setLocationRelativeTo(null);
         quoteWindow.setVisible(true);
+        quoteWindow.pack();
     }
 
     public static void main(String[] args) {
@@ -47,6 +48,7 @@ public class JBookQuote2 implements ActionListener {
         bookTitle.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
         panel.add(bookTitle);
         titleButton.setEnabled(false);
+        quoteWindow.pack();
         quoteWindow.validate();
         quoteWindow.repaint();
     }
