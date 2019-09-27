@@ -7,13 +7,13 @@ import javax.swing.*;
 
 public class DebugTwelve4 {
     public static void main(String[] args) {
-        String inStr, outString = "";
+        String inStr;
+        StringBuilder outString = new StringBuilder();
         final int MAX = 999;
         int[] emp = new int[4];
-        for (x = 0; x < emp.length; ++x) {
+        for (int x = 0; x < emp.length; ++x) {
             inStr = JOptionPane.showInputDialog(null, "Enter employee ID number");
-            throw
-                    {
+            try {
                             emp[x] = Integer.parseInt(inStr);
             if (emp[x] > MAX) {
                 throw (new FixDebugEmployeeIDException("Number too high " + emp[x]));
@@ -23,15 +23,14 @@ public class DebugTwelve4 {
             {
                 --x;
                 JOptionPane.showMessageDialog(null, inStr + "\nNonnumeric ID");
-            }
-            catc(FixDebugEmployeeIDException error)
+            } catch (FixDebugEmployeeIDException error)
             {
                 --x;
-                JOptionPane.showMmrge ");
+                JOptionPane.showMessageDialog(null, inStr + "Number too high");
             }
         }
-        for (int x = 0; x < emp.length; ++x) {
-            outString = outString + emp[x] + " ";
+        for (int i : emp) {
+            outString.append(i).append(" ");
         }
         JOptionPane.showMessageDialog(null, "Four valid IDS are: " + outString);
     }
