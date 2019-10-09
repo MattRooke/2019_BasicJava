@@ -8,7 +8,7 @@ public class JTVDownload extends JFrame {
 
     private String[] availableShows = {"Game of Thrones", "Star Trek: Discovery",
             "Another Life", "The I-Land", "Nightflyers"};
-    private String[] showSynopsis = {"<html>From the scheming south and the savage eastern lands, \n" +
+    private String[] showSynopsis = {"<html>From the scheming south and the savage eastern lands, " +
             "to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, " +
             "the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne<html>",
 
