@@ -10,6 +10,7 @@ public class JUpsideDownPanel extends JPanel {
 
     public static void main(String[] args) {
         JFrame mainFrame = new JFrame("UpsideDown");
+        mainFrame.setSize(200, 150);
         mainFrame.setLayout(new BorderLayout());
         JUpsideDownPanel mainPanel = new JUpsideDownPanel();
         JButton phraseButton = new JButton("Flip!");
@@ -33,7 +34,6 @@ public class JUpsideDownPanel extends JPanel {
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainFrame.setLocationRelativeTo(null);
         mainFrame.setVisible(true);
-        mainFrame.pack();
     }
 
     public void paint(Graphics g) {
