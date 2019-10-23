@@ -1,21 +1,22 @@
-// This program should display a bullseye, not a cone
+package week12.Debuggers;// This program should display a bullseye, not a cone
 
 import javax.swing.*;
 import java.awt.*;
 
-public class DebugSixteen1 extends JPanel {
+public class FixDebugSixteen1 extends JPanel {
     String msg = "This is a bull's eye";
     int radius, corner;
 
-    public DebugSixteen1() {
+    public FixDebugSixteen1() {
         setBackground(Color.WHITE);
     }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.add(new DebugSixteen1());
+        frame.add(new FixDebugSixteen1());
         frame.setSize(340, 340);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 
     @Override
@@ -30,10 +31,11 @@ public class DebugSixteen1 extends JPanel {
                 gr.setColor(Color.YELLOW);
             else
                 gr.setColor(Color.BLUE);
-            gr.drawOval(corner, corner, radius, radius);
+
+            gr.drawOval(corner - (radius / 2), corner - (radius / 2), radius, radius);
         }
         gr.setFont(new Font("Arial", Font.ITALIC, 20));
         gr.setColor(Color.BLACK);
-        gr.drawString(msg, 100, 150);
+        gr.drawString(msg, 0, 275);
     }
 }
